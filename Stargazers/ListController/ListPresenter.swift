@@ -31,6 +31,7 @@ extension ListPresenter: ListPresenterProtocol {
         page += 1
         stargazersInteractor.perform(user: user, page: page)
     }
+
     func stagazers(list: [MStargazer]) {
         view?.load(stargazers: list)
     }
