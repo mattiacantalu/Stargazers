@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCB8E08A263C579400D734D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E089263C579400D734D7 /* AppDelegate.swift */; };
+		CCB8E091263C579400D734D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB8E08F263C579400D734D7 /* Main.storyboard */; };
+		CCB8E093263C579700D734D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB8E092263C579700D734D7 /* Assets.xcassets */; };
+		CCB8E096263C579700D734D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB8E094263C579700D734D7 /* LaunchScreen.storyboard */; };
+		CCB8E0D3263C57F800D734D7 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0BB263C57F800D734D7 /* Functional.swift */; };
+		CCB8E0D4263C57F800D734D7 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0BC263C57F800D734D7 /* Dispatcher.swift */; };
+		CCB8E0D5263C57F800D734D7 /* PerformTry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0BD263C57F800D734D7 /* PerformTry.swift */; };
+		CCB8E0D6263C57F800D734D7 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0BE263C57F800D734D7 /* UIViewController+Alert.swift */; };
+		CCB8E0D7263C57F800D734D7 /* MConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0BF263C57F800D734D7 /* MConstants.swift */; };
+		CCB8E0D8263C57F800D734D7 /* MExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0C0263C57F800D734D7 /* MExtensions.swift */; };
+		CCB8E0D9263C57F800D734D7 /* MURLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0C2263C57F800D734D7 /* MURLConfiguration.swift */; };
+		CCB8E0DB263C57F800D734D7 /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0C6263C57F800D734D7 /* Github.swift */; };
+		CCB8E0DC263C57F800D734D7 /* MURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0C8263C57F800D734D7 /* MURLRequest.swift */; };
+		CCB8E0DD263C57F800D734D7 /* MGithubComands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0CA263C57F800D734D7 /* MGithubComands.swift */; };
+		CCB8E0DE263C57F800D734D7 /* MURLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0CC263C57F800D734D7 /* MURLService.swift */; };
+		CCB8E0DF263C57F800D734D7 /* Result+MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0CD263C57F800D734D7 /* Result+MapError.swift */; };
+		CCB8E0E0263C57F800D734D7 /* MServicePerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0CE263C57F800D734D7 /* MServicePerformer.swift */; };
+		CCB8E0E1263C57F800D734D7 /* MURLServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0CF263C57F800D734D7 /* MURLServiceError.swift */; };
+		CCB8E0E2263C57F800D734D7 /* MURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0D1263C57F800D734D7 /* MURLSession.swift */; };
+		CCB8E0E5263C61D700D734D7 /* valid_stargazer.json in Resources */ = {isa = PBXBuildFile; fileRef = CCB8E0E3263C61D600D734D7 /* valid_stargazer.json */; };
+		CCB8E0E6263C61D700D734D7 /* valid_error.json in Resources */ = {isa = PBXBuildFile; fileRef = CCB8E0E4263C61D700D734D7 /* valid_error.json */; };
+		CCB8E0E9263C620500D734D7 /* MockedSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0E8263C620500D734D7 /* MockedSession.swift */; };
+		CCB8E0EB263C620B00D734D7 /* JSONMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0EA263C620B00D734D7 /* JSONMock.swift */; };
+		CCB8E0F7263C622000D734D7 /* MapErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0ED263C622000D734D7 /* MapErrorTests.swift */; };
+		CCB8E0F8263C622000D734D7 /* MURLRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0EE263C622000D734D7 /* MURLRequestTests.swift */; };
+		CCB8E0FA263C622000D734D7 /* GetStargazersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0F0263C622000D734D7 /* GetStargazersTests.swift */; };
+		CCB8E0FB263C622000D734D7 /* MURLCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E0F1263C622000D734D7 /* MURLCommandTests.swift */; };
+		CCB8E102263C677800D734D7 /* StargazersSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E101263C677800D734D7 /* StargazersSession.swift */; };
+		CCB8E108263C6BC300D734D7 /* GetStargazersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E104263C6BC300D734D7 /* GetStargazersInteractor.swift */; };
+		CCB8E109263C6BC300D734D7 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E105263C6BC300D734D7 /* SearchRouter.swift */; };
+		CCB8E10A263C6BC300D734D7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E106263C6BC300D734D7 /* SearchViewController.swift */; };
+		CCB8E10B263C6BC300D734D7 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E107263C6BC300D734D7 /* SearchPresenter.swift */; };
+		CCB8E10E263C6FE000D734D7 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E10D263C6FDF00D734D7 /* Wireframe.swift */; };
+		CCB8E110263C9F7600D734D7 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E10F263C9F7600D734D7 /* ListRouter.swift */; };
+		CCB8E112263CA09000D734D7 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E111263CA09000D734D7 /* ListPresenter.swift */; };
+		CCB8E114263CA0B600D734D7 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E113263CA0B600D734D7 /* ListViewController.swift */; };
+		CCB8E116263CA49D00D734D7 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E115263CA49D00D734D7 /* ListCell.swift */; };
+		CCB8E118263CA6D100D734D7 /* MImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E117263CA6D100D734D7 /* MImageDownloader.swift */; };
+		CCB8E11E263CD23100D734D7 /* MockedSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E11D263CD23000D734D7 /* MockedSearchView.swift */; };
+		CCB8E120263CD23A00D734D7 /* MockedSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E11F263CD23A00D734D7 /* MockedSearchPresenter.swift */; };
+		CCB8E122263CD2CA00D734D7 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E121263CD2CA00D734D7 /* SearchPresenterTests.swift */; };
+		CCB8E124263CD2FF00D734D7 /* MockedWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E123263CD2FF00D734D7 /* MockedWireFrame.swift */; };
+		CCB8E127263CD61800D734D7 /* MockedListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E126263CD61800D734D7 /* MockedListPresenter.swift */; };
+		CCB8E129263CD6C800D734D7 /* MockedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E128263CD6C800D734D7 /* MockedListView.swift */; };
+		CCB8E12B263CD75000D734D7 /* MockedStargazersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E12A263CD75000D734D7 /* MockedStargazersInteractor.swift */; };
+		CCB8E12D263CD7DA00D734D7 /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E12C263CD7DA00D734D7 /* ListPresenterTests.swift */; };
+		CCB8E12F263CDC9300D734D7 /* StargazersInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E12E263CDC9300D734D7 /* StargazersInteractorTests.swift */; };
+		CCB8E131263E1B7900D734D7 /* MCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E130263E1B7800D734D7 /* MCacheService.swift */; };
+		CCB8E133263E212B00D734D7 /* MCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E132263E212B00D734D7 /* MCacheServiceTests.swift */; };
+		CCB8E135263E250400D734D7 /* MockedCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E134263E250400D734D7 /* MockedCacheable.swift */; };
+		CCB8E137263E25EA00D734D7 /* MImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E136263E25EA00D734D7 /* MImageDownloaderTests.swift */; };
+		CCB8E139263E2EB700D734D7 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB8E138263E2EB700D734D7 /* sample.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCB8E09D263C579700D734D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCB8E07E263C579400D734D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCB8E085263C579400D734D7;
+			remoteInfo = Stargazers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCB8E086263C579400D734D7 /* Stargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB8E089263C579400D734D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCB8E090263C579400D734D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCB8E092263C579700D734D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCB8E095263C579700D734D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCB8E097263C579700D734D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB8E09C263C579700D734D7 /* StargazersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB8E0A2263C579700D734D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB8E0BB263C57F800D734D7 /* Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
+		CCB8E0BC263C57F800D734D7 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		CCB8E0BD263C57F800D734D7 /* PerformTry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformTry.swift; sourceTree = "<group>"; };
+		CCB8E0BE263C57F800D734D7 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		CCB8E0BF263C57F800D734D7 /* MConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MConstants.swift; sourceTree = "<group>"; };
+		CCB8E0C0263C57F800D734D7 /* MExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MExtensions.swift; sourceTree = "<group>"; };
+		CCB8E0C2263C57F800D734D7 /* MURLConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MURLConfiguration.swift; sourceTree = "<group>"; };
+		CCB8E0C6263C57F800D734D7 /* Github.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
+		CCB8E0C8263C57F800D734D7 /* MURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MURLRequest.swift; sourceTree = "<group>"; };
+		CCB8E0CA263C57F800D734D7 /* MGithubComands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGithubComands.swift; sourceTree = "<group>"; };
+		CCB8E0CC263C57F800D734D7 /* MURLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MURLService.swift; sourceTree = "<group>"; };
+		CCB8E0CD263C57F800D734D7 /* Result+MapError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+MapError.swift"; sourceTree = "<group>"; };
+		CCB8E0CE263C57F800D734D7 /* MServicePerformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MServicePerformer.swift; sourceTree = "<group>"; };
+		CCB8E0CF263C57F800D734D7 /* MURLServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MURLServiceError.swift; sourceTree = "<group>"; };
+		CCB8E0D1263C57F800D734D7 /* MURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MURLSession.swift; sourceTree = "<group>"; };
+		CCB8E0E3263C61D600D734D7 /* valid_stargazer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_stargazer.json; sourceTree = "<group>"; };
+		CCB8E0E4263C61D700D734D7 /* valid_error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_error.json; sourceTree = "<group>"; };
+		CCB8E0E8263C620500D734D7 /* MockedSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedSession.swift; sourceTree = "<group>"; };
+		CCB8E0EA263C620B00D734D7 /* JSONMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMock.swift; sourceTree = "<group>"; };
+		CCB8E0ED263C622000D734D7 /* MapErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapErrorTests.swift; sourceTree = "<group>"; };
+		CCB8E0EE263C622000D734D7 /* MURLRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MURLRequestTests.swift; sourceTree = "<group>"; };
+		CCB8E0F0263C622000D734D7 /* GetStargazersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStargazersTests.swift; sourceTree = "<group>"; };
+		CCB8E0F1263C622000D734D7 /* MURLCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MURLCommandTests.swift; sourceTree = "<group>"; };
+		CCB8E101263C677800D734D7 /* StargazersSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StargazersSession.swift; sourceTree = "<group>"; };
+		CCB8E104263C6BC300D734D7 /* GetStargazersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStargazersInteractor.swift; sourceTree = "<group>"; };
+		CCB8E105263C6BC300D734D7 /* SearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		CCB8E106263C6BC300D734D7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CCB8E107263C6BC300D734D7 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		CCB8E10D263C6FDF00D734D7 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		CCB8E10F263C9F7600D734D7 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		CCB8E111263CA09000D734D7 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		CCB8E113263CA0B600D734D7 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CCB8E115263CA49D00D734D7 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		CCB8E117263CA6D100D734D7 /* MImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MImageDownloader.swift; sourceTree = "<group>"; };
+		CCB8E11D263CD23000D734D7 /* MockedSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSearchView.swift; sourceTree = "<group>"; };
+		CCB8E11F263CD23A00D734D7 /* MockedSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSearchPresenter.swift; sourceTree = "<group>"; };
+		CCB8E121263CD2CA00D734D7 /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
+		CCB8E123263CD2FF00D734D7 /* MockedWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedWireFrame.swift; sourceTree = "<group>"; };
+		CCB8E126263CD61800D734D7 /* MockedListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedListPresenter.swift; sourceTree = "<group>"; };
+		CCB8E128263CD6C800D734D7 /* MockedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedListView.swift; sourceTree = "<group>"; };
+		CCB8E12A263CD75000D734D7 /* MockedStargazersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedStargazersInteractor.swift; sourceTree = "<group>"; };
+		CCB8E12C263CD7DA00D734D7 /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		CCB8E12E263CDC9300D734D7 /* StargazersInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersInteractorTests.swift; sourceTree = "<group>"; };
+		CCB8E130263E1B7800D734D7 /* MCacheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCacheService.swift; sourceTree = "<group>"; };
+		CCB8E132263E212B00D734D7 /* MCacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCacheServiceTests.swift; sourceTree = "<group>"; };
+		CCB8E134263E250400D734D7 /* MockedCacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCacheable.swift; sourceTree = "<group>"; };
+		CCB8E136263E25EA00D734D7 /* MImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MImageDownloaderTests.swift; sourceTree = "<group>"; };
+		CCB8E138263E2EB700D734D7 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCB8E083263C579400D734D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB8E099263C579700D734D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCB8E07D263C579400D734D7 = {
+			isa = PBXGroup;
+			children = (
+				CCB8E088263C579400D734D7 /* Stargazers */,
+				CCB8E09F263C579700D734D7 /* StargazersTests */,
+				CCB8E087263C579400D734D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCB8E087263C579400D734D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E086263C579400D734D7 /* Stargazers.app */,
+				CCB8E09C263C579700D734D7 /* StargazersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCB8E088263C579400D734D7 /* Stargazers */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0C1263C57F800D734D7 /* Core */,
+				CCB8E0B9263C57F800D734D7 /* Utils */,
+				CCB8E101263C677800D734D7 /* StargazersSession.swift */,
+				CCB8E10D263C6FDF00D734D7 /* Wireframe.swift */,
+				CCB8E089263C579400D734D7 /* AppDelegate.swift */,
+				CCB8E103263C6BA200D734D7 /* SearchController */,
+				CCB8E10C263C6F3700D734D7 /* ListController */,
+				CCB8E08F263C579400D734D7 /* Main.storyboard */,
+				CCB8E092263C579700D734D7 /* Assets.xcassets */,
+				CCB8E094263C579700D734D7 /* LaunchScreen.storyboard */,
+				CCB8E097263C579700D734D7 /* Info.plist */,
+			);
+			path = Stargazers;
+			sourceTree = "<group>";
+		};
+		CCB8E09F263C579700D734D7 /* StargazersTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0E7263C61D900D734D7 /* Mocks */,
+				CCB8E0EC263C622000D734D7 /* CoreTests */,
+				CCB8E11B263CD1DA00D734D7 /* SectionsTests */,
+				CCB8E0A2263C579700D734D7 /* Info.plist */,
+			);
+			path = StargazersTests;
+			sourceTree = "<group>";
+		};
+		CCB8E0B9263C57F800D734D7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0BB263C57F800D734D7 /* Functional.swift */,
+				CCB8E0BC263C57F800D734D7 /* Dispatcher.swift */,
+				CCB8E0BD263C57F800D734D7 /* PerformTry.swift */,
+				CCB8E0BE263C57F800D734D7 /* UIViewController+Alert.swift */,
+				CCB8E0BF263C57F800D734D7 /* MConstants.swift */,
+				CCB8E0C0263C57F800D734D7 /* MExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CCB8E0C1263C57F800D734D7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0C2263C57F800D734D7 /* MURLConfiguration.swift */,
+				CCB8E0C5263C57F800D734D7 /* Model */,
+				CCB8E0C7263C57F800D734D7 /* Request */,
+				CCB8E0C9263C57F800D734D7 /* Commands */,
+				CCB8E0CB263C57F800D734D7 /* Service */,
+				CCB8E0D0263C57F800D734D7 /* Session */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CCB8E0C5263C57F800D734D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0C6263C57F800D734D7 /* Github.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCB8E0C7263C57F800D734D7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0C8263C57F800D734D7 /* MURLRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CCB8E0C9263C57F800D734D7 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0CA263C57F800D734D7 /* MGithubComands.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		CCB8E0CB263C57F800D734D7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0CF263C57F800D734D7 /* MURLServiceError.swift */,
+				CCB8E0CC263C57F800D734D7 /* MURLService.swift */,
+				CCB8E130263E1B7800D734D7 /* MCacheService.swift */,
+				CCB8E0CD263C57F800D734D7 /* Result+MapError.swift */,
+				CCB8E0CE263C57F800D734D7 /* MServicePerformer.swift */,
+				CCB8E117263CA6D100D734D7 /* MImageDownloader.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CCB8E0D0263C57F800D734D7 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0D1263C57F800D734D7 /* MURLSession.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		CCB8E0E7263C61D900D734D7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0E4263C61D700D734D7 /* valid_error.json */,
+				CCB8E0E3263C61D600D734D7 /* valid_stargazer.json */,
+				CCB8E0E8263C620500D734D7 /* MockedSession.swift */,
+				CCB8E0EA263C620B00D734D7 /* JSONMock.swift */,
+				CCB8E123263CD2FF00D734D7 /* MockedWireFrame.swift */,
+				CCB8E11F263CD23A00D734D7 /* MockedSearchPresenter.swift */,
+				CCB8E11D263CD23000D734D7 /* MockedSearchView.swift */,
+				CCB8E126263CD61800D734D7 /* MockedListPresenter.swift */,
+				CCB8E128263CD6C800D734D7 /* MockedListView.swift */,
+				CCB8E12A263CD75000D734D7 /* MockedStargazersInteractor.swift */,
+				CCB8E134263E250400D734D7 /* MockedCacheable.swift */,
+				CCB8E138263E2EB700D734D7 /* sample.png */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CCB8E0EC263C622000D734D7 /* CoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E0ED263C622000D734D7 /* MapErrorTests.swift */,
+				CCB8E0EE263C622000D734D7 /* MURLRequestTests.swift */,
+				CCB8E0F0263C622000D734D7 /* GetStargazersTests.swift */,
+				CCB8E0F1263C622000D734D7 /* MURLCommandTests.swift */,
+				CCB8E132263E212B00D734D7 /* MCacheServiceTests.swift */,
+				CCB8E136263E25EA00D734D7 /* MImageDownloaderTests.swift */,
+			);
+			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		CCB8E103263C6BA200D734D7 /* SearchController */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E105263C6BC300D734D7 /* SearchRouter.swift */,
+				CCB8E107263C6BC300D734D7 /* SearchPresenter.swift */,
+				CCB8E106263C6BC300D734D7 /* SearchViewController.swift */,
+			);
+			path = SearchController;
+			sourceTree = "<group>";
+		};
+		CCB8E10C263C6F3700D734D7 /* ListController */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E10F263C9F7600D734D7 /* ListRouter.swift */,
+				CCB8E111263CA09000D734D7 /* ListPresenter.swift */,
+				CCB8E104263C6BC300D734D7 /* GetStargazersInteractor.swift */,
+				CCB8E113263CA0B600D734D7 /* ListViewController.swift */,
+				CCB8E115263CA49D00D734D7 /* ListCell.swift */,
+			);
+			path = ListController;
+			sourceTree = "<group>";
+		};
+		CCB8E11B263CD1DA00D734D7 /* SectionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E11C263CD1EE00D734D7 /* Search */,
+				CCB8E125263CD5F700D734D7 /* List */,
+			);
+			path = SectionsTests;
+			sourceTree = "<group>";
+		};
+		CCB8E11C263CD1EE00D734D7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E121263CD2CA00D734D7 /* SearchPresenterTests.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CCB8E125263CD5F700D734D7 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8E12C263CD7DA00D734D7 /* ListPresenterTests.swift */,
+				CCB8E12E263CDC9300D734D7 /* StargazersInteractorTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCB8E085263C579400D734D7 /* Stargazers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB8E0B0263C579700D734D7 /* Build configuration list for PBXNativeTarget "Stargazers" */;
+			buildPhases = (
+				CCB8E082263C579400D734D7 /* Sources */,
+				CCB8E083263C579400D734D7 /* Frameworks */,
+				CCB8E084263C579400D734D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stargazers;
+			productName = Stargazers;
+			productReference = CCB8E086263C579400D734D7 /* Stargazers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCB8E09B263C579700D734D7 /* StargazersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB8E0B3263C579700D734D7 /* Build configuration list for PBXNativeTarget "StargazersTests" */;
+			buildPhases = (
+				CCB8E098263C579700D734D7 /* Sources */,
+				CCB8E099263C579700D734D7 /* Frameworks */,
+				CCB8E09A263C579700D734D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCB8E09E263C579700D734D7 /* PBXTargetDependency */,
+			);
+			name = StargazersTests;
+			productName = StargazersTests;
+			productReference = CCB8E09C263C579700D734D7 /* StargazersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCB8E07E263C579400D734D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CCB8E085263C579400D734D7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CCB8E09B263C579700D734D7 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CCB8E085263C579400D734D7;
+					};
+				};
+			};
+			buildConfigurationList = CCB8E081263C579400D734D7 /* Build configuration list for PBXProject "Stargazers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCB8E07D263C579400D734D7;
+			productRefGroup = CCB8E087263C579400D734D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCB8E085263C579400D734D7 /* Stargazers */,
+				CCB8E09B263C579700D734D7 /* StargazersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCB8E084263C579400D734D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB8E096263C579700D734D7 /* LaunchScreen.storyboard in Resources */,
+				CCB8E093263C579700D734D7 /* Assets.xcassets in Resources */,
+				CCB8E091263C579400D734D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB8E09A263C579700D734D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB8E0E5263C61D700D734D7 /* valid_stargazer.json in Resources */,
+				CCB8E0E6263C61D700D734D7 /* valid_error.json in Resources */,
+				CCB8E139263E2EB700D734D7 /* sample.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCB8E082263C579400D734D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB8E10A263C6BC300D734D7 /* SearchViewController.swift in Sources */,
+				CCB8E0E2263C57F800D734D7 /* MURLSession.swift in Sources */,
+				CCB8E102263C677800D734D7 /* StargazersSession.swift in Sources */,
+				CCB8E10B263C6BC300D734D7 /* SearchPresenter.swift in Sources */,
+				CCB8E0DE263C57F800D734D7 /* MURLService.swift in Sources */,
+				CCB8E0D7263C57F800D734D7 /* MConstants.swift in Sources */,
+				CCB8E08A263C579400D734D7 /* AppDelegate.swift in Sources */,
+				CCB8E0D4263C57F800D734D7 /* Dispatcher.swift in Sources */,
+				CCB8E114263CA0B600D734D7 /* ListViewController.swift in Sources */,
+				CCB8E10E263C6FE000D734D7 /* Wireframe.swift in Sources */,
+				CCB8E110263C9F7600D734D7 /* ListRouter.swift in Sources */,
+				CCB8E112263CA09000D734D7 /* ListPresenter.swift in Sources */,
+				CCB8E0DB263C57F800D734D7 /* Github.swift in Sources */,
+				CCB8E0D3263C57F800D734D7 /* Functional.swift in Sources */,
+				CCB8E0E1263C57F800D734D7 /* MURLServiceError.swift in Sources */,
+				CCB8E0D5263C57F800D734D7 /* PerformTry.swift in Sources */,
+				CCB8E108263C6BC300D734D7 /* GetStargazersInteractor.swift in Sources */,
+				CCB8E116263CA49D00D734D7 /* ListCell.swift in Sources */,
+				CCB8E0D6263C57F800D734D7 /* UIViewController+Alert.swift in Sources */,
+				CCB8E0E0263C57F800D734D7 /* MServicePerformer.swift in Sources */,
+				CCB8E0D8263C57F800D734D7 /* MExtensions.swift in Sources */,
+				CCB8E0DD263C57F800D734D7 /* MGithubComands.swift in Sources */,
+				CCB8E0D9263C57F800D734D7 /* MURLConfiguration.swift in Sources */,
+				CCB8E0DF263C57F800D734D7 /* Result+MapError.swift in Sources */,
+				CCB8E131263E1B7900D734D7 /* MCacheService.swift in Sources */,
+				CCB8E118263CA6D100D734D7 /* MImageDownloader.swift in Sources */,
+				CCB8E109263C6BC300D734D7 /* SearchRouter.swift in Sources */,
+				CCB8E0DC263C57F800D734D7 /* MURLRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB8E098263C579700D734D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB8E0F8263C622000D734D7 /* MURLRequestTests.swift in Sources */,
+				CCB8E0F7263C622000D734D7 /* MapErrorTests.swift in Sources */,
+				CCB8E124263CD2FF00D734D7 /* MockedWireFrame.swift in Sources */,
+				CCB8E0E9263C620500D734D7 /* MockedSession.swift in Sources */,
+				CCB8E12D263CD7DA00D734D7 /* ListPresenterTests.swift in Sources */,
+				CCB8E0FA263C622000D734D7 /* GetStargazersTests.swift in Sources */,
+				CCB8E12F263CDC9300D734D7 /* StargazersInteractorTests.swift in Sources */,
+				CCB8E129263CD6C800D734D7 /* MockedListView.swift in Sources */,
+				CCB8E11E263CD23100D734D7 /* MockedSearchView.swift in Sources */,
+				CCB8E12B263CD75000D734D7 /* MockedStargazersInteractor.swift in Sources */,
+				CCB8E137263E25EA00D734D7 /* MImageDownloaderTests.swift in Sources */,
+				CCB8E122263CD2CA00D734D7 /* SearchPresenterTests.swift in Sources */,
+				CCB8E0EB263C620B00D734D7 /* JSONMock.swift in Sources */,
+				CCB8E133263E212B00D734D7 /* MCacheServiceTests.swift in Sources */,
+				CCB8E0FB263C622000D734D7 /* MURLCommandTests.swift in Sources */,
+				CCB8E120263CD23A00D734D7 /* MockedSearchPresenter.swift in Sources */,
+				CCB8E127263CD61800D734D7 /* MockedListPresenter.swift in Sources */,
+				CCB8E135263E250400D734D7 /* MockedCacheable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCB8E09E263C579700D734D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCB8E085263C579400D734D7 /* Stargazers */;
+			targetProxy = CCB8E09D263C579700D734D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCB8E08F263C579400D734D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB8E090263C579400D734D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCB8E094263C579700D734D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB8E095263C579700D734D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCB8E0AE263C579700D734D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCB8E0AF263C579700D734D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCB8E0B1263C579700D734D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55FQJZ6S37;
+				INFOPLIST_FILE = Stargazers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattiacantalu.Stargazers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCB8E0B2263C579700D734D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55FQJZ6S37;
+				INFOPLIST_FILE = Stargazers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattiacantalu.Stargazers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCB8E0B4263C579700D734D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55FQJZ6S37;
+				INFOPLIST_FILE = StargazersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattiacantalu.StargazersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stargazers.app/Stargazers";
+			};
+			name = Debug;
+		};
+		CCB8E0B5263C579700D734D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55FQJZ6S37;
+				INFOPLIST_FILE = StargazersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattiacantalu.StargazersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stargazers.app/Stargazers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCB8E081263C579400D734D7 /* Build configuration list for PBXProject "Stargazers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB8E0AE263C579700D734D7 /* Debug */,
+				CCB8E0AF263C579700D734D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCB8E0B0263C579700D734D7 /* Build configuration list for PBXNativeTarget "Stargazers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB8E0B1263C579700D734D7 /* Debug */,
+				CCB8E0B2263C579700D734D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCB8E0B3263C579700D734D7 /* Build configuration list for PBXNativeTarget "StargazersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB8E0B4263C579700D734D7 /* Debug */,
+				CCB8E0B5263C579700D734D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCB8E07E263C579400D734D7 /* Project object */;
+}
